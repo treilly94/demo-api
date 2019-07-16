@@ -1,4 +1,9 @@
 node {
+  
+  environment {
+        DOCKER_CONTENT_TRUST = '1'
+  }
+  
   stage('Checkout') {
     checkout scm
   }
