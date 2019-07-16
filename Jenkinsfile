@@ -15,7 +15,7 @@ node {
   stage('Scan') {
     withCredentials([
         string(credentialsId: 'microscanner-token',
-               variable: 'MICROSCANNER-TOKEN'),
+               variable: 'MICROSCANNER_TOKEN'),
         usernamePassword(credentialsId: 'docker-credentials',
                          usernameVariable: 'USERNAME',
                          passwordVariable: 'PASSWORD')]) {
